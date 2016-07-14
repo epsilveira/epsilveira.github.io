@@ -1,0 +1,4 @@
+<Files "pb-at-historicos-intro.html">
+AddCharset windows-1252 .html
+ForceType 'text/html; charset=windows-1252'
+</Files>
