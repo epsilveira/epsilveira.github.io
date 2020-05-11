@@ -1,6 +1,8 @@
 body {
-    background-image: url("http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg");
-    background-size: auto 100vh;
+    /*background-image: url("http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg");
+    background-size: auto 100vh;*/
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
     font-family: Arial;
     height: 100vh;
   }
