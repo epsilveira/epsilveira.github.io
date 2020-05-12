@@ -1,41 +1,83 @@
+/* reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    /*background-image: url("http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg");
-    background-size: auto 100vh;*/
-    background-color: #159957;
-    background-image: linear-gradient(120deg, #155799, #159957);
-    font-family: Arial;
-    height: 100vh;
+  /*background-image: url("http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg");
+  background-size: auto 100vh;*/
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  font-family: Arial;
+  height: 100vh;
+}
+
+/* Se a tela tiver pelo menos 600px */
+@media (min-width: 700px) {
+  body {
+    font-size: 24px;
   }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: whitesmoke;    
+  box-shadow: 5px 5px 75px 1px teal;
+  padding: 5px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu a {  
+  display: block;
+  padding: 5px 10px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
   
-  .menu {
-    background-color: white;  
-  }
+.menu li {
+  list-style: none;  
+}
   
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-  }
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 3em;
+}
+
+.site-subtitle {
+  background-color: whitesmoke;
+  color: teal;
+  font-style: italic;
+  padding: 5px;  
+}
   
-  .menu li {
-    list-style: none;  
-  }
-  
-  a {
-    color: teal;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .site-subtitle,
-  .site-title {
-    color: whitesmoke;
-    text-align: center;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-  }
-  
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
