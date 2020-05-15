@@ -3,15 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', Helvetica, sans-serif;
 }
 
 body {
   /*background-image: url("http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg");
   background-size: auto 100vh;*/
   background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957);
-  font-family: Arial;
-  height: 100vh;
+  background-image: linear-gradient(120deg, #155799, #159957);    
 }
 
 /* Se a tela tiver pelo menos 600px */
@@ -35,11 +34,19 @@ header {
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
 }
 
 .menu a {  
   display: block;
   padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:active,
+.menu a:hover{
+  background-color: teal;
+  color: whitesmoke;
 }
 
 .menu ul {
@@ -60,6 +67,29 @@ a:hover {
   text-decoration: underline;
 }
 
+.titulo {
+  transform: scale(0.4) translateY(5vh);
+  opacity: 0;
+  animation: 1s ease 1s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+  /*
+  0% {
+    não precisa, pois já está no .titulo
+  }
+  pode ser usado também
+  from {
+  }
+  to {
+  }
+  */
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
 .site-subtitle,
 .site-title {
   color: whitesmoke;
@@ -68,16 +98,120 @@ a:hover {
 
 .site-title {
   font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
 }
 
 .site-subtitle {
   background-color: whitesmoke;
   color: teal;
+  font-family: 'Source Code Pro', monospace;
   font-style: italic;
+  line-height: 1.2em;
   padding: 5px;  
 }
-  
+
+.sobre,
+.contato,
+.portfolio {
+  padding: 2em;   
+  min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  color: whitesmoke;
+  margin-bottom: 0.8em;
+}
+
+.sobre a,
+.direitos a,
+.direitos a {
+  font-family: 'Source Code Pro', monospace;  
+  color: wheat;
+}
+
+.sobre p {  
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+  text-indent: 1.5em;
+}
+.portfolio .grid {
+  display: grid;
+  gap: 2em; 
+  justify-content: center; 
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 240px);
+    height: auto;    
+  }
+}
+
+.portfolio figure {
+  font-family: 'Source Code Pro', monospace;  
+  text-align: center;
+}
+
 .img-portfolio {
-  height: 180px;
-  width: 180px;
+  height: auto;
+  width: 240px;
+  /*object-fit: contain;
+  object-position: right bottom;*/
+  border-radius: 10%;  
+  transition: transform 400ms;
+}
+
+.img-portfolio:hover {
+  transform: scale(1.2);
+}
+
+/*
+@media (min-width: 1200px) {
+  .img-portfolio {
+    height: 10em;
+    width: auto;
+  }
+}*/
+
+.contato {
+  text-align: center;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 3em;
+  transition: text-shadow 0.2s;
+}
+
+.contato a:active,
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px whitesmoke;
+}
+
+.direitos {
+  font-size: 0.7em;  
 }
