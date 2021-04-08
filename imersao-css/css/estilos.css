@@ -10,7 +10,8 @@ body {
   /*background-image: url("http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg");
   background-size: auto 100vh;*/
   background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957);    
+  background-image: linear-gradient(120deg, #155799, #159957); 
+  font-size: 12px   
 }
 
 /* Se a tela tiver pelo menos 600px */
@@ -68,23 +69,27 @@ a:hover {
 }
 
 .titulo {
-  transform: scale(0.4) translateY(5vh);
-  opacity: 0;
+  /*transform: scale(0.4) translateY(5vh);
+  opacity: 0;*/
   animation: 1s ease 1s animacaoTitulo forwards;
 }
 
 @keyframes animacaoTitulo {
   /*
-  0% {
-    não precisa, pois já está no .titulo
-  }
   pode ser usado também
-  from {
-  }
-  to {
+  0% {
+    não precisa se colocar no .titulo
+  }  
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
   }
   */
-  100% {
+  from {
+    transform: scale(0.4) translateY(5vh);
+    opacity: 0;
+  }
+  to {
     transform: scale(1) translateY(0);
     opacity: 1;
   }
@@ -120,10 +125,10 @@ a:hover {
 
 @media (min-width: 1200px) {
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
 
 }
 .sobre h2,
@@ -137,19 +142,30 @@ a:hover {
 }
 
 .sobre a,
-.direitos a,
+.contato a,
 .direitos a {
   font-family: 'Source Code Pro', monospace;  
-  color: wheat;
+  color: wheat;  
 }
 
 .sobre p {  
   font-family: 'Source Code Pro', monospace;  
   font-size: 1em;
   margin-bottom: 1em;
-  text-align: left;
+  text-align: justify;
   text-indent: 1.5em;
 }
+
+.sobre .avatar {  
+  margin-left: 1em;  
+}
+
+@media (min-width: 780px) {
+  .sobre .avatar {
+    float: right;    
+  }
+}
+
 .portfolio .grid {
   display: grid;
   gap: 2em; 
@@ -177,15 +193,50 @@ a:hover {
 
 .img-portfolio {
   height: auto;
-  width: 240px;
+  width: 100%;
   /*object-fit: contain;
   object-position: right bottom;*/
   border-radius: 10%;  
   transition: transform 400ms;
 }
 
-.img-portfolio:hover {
+/*.img-portfolio:hover {
   transform: scale(1.2);
+}*/
+
+.flip-card {  
+  height: 180px;
+  perspective: 1000px;
+}
+
+.flip-card:hover .card {  
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.card-frente,
+.card-verso {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-verso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+  border-radius: 10%; 
 }
 
 /*
