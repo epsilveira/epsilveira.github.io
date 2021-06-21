@@ -2,9 +2,9 @@ export default
   [
     {
       "categoria": "promos",
-      "titulo": "50% off na compra da 2ª lâmpada inteligente",
+      "titulo": "Ofertas Relâmpago Prime Day",
       "descricao": "",
-      "url": "https://www.amazon.com.br/gp/promotion/A27SUS7N2RO6H2?_encoding=UTF8&linkCode=ib1&tag=eddiethedrumm-20&linkId=7d95cdcecada63098d92d8e823e098d4&ref_=ihub_curatedcontent_6e91ed0a-3f1c-44c5-9620-ac71ac477cdc"
+      "url": "https://amzn.to/2UrgVSd"
     },
     {
       "categoria": "promos",
@@ -20,9 +20,9 @@ export default
     },
     {
       "categoria": "promos",
-      "titulo": "20% off em DVD e Blu-ray",
+      "titulo": "Pilha Alcalina AA, Duracell C/16 - de R$ 59,90 por R$ 47,90 (até 20 horas do dia 21 de junho de 2021",
       "descricao": "",
-      "url": "https://www.amazon.com.br/b?node=21607104011&_encoding=UTF8&linkCode=ib1&tag=eddiethedrumm-20&linkId=a2b33b4afa11f66e53273007c674a35b&ref_=ihub_curatedcontent_758a69ba-1236-4de7-9ba3-5cbfefde2513"
+      "url": "https://amzn.to/35Db3aE"
     },
     {
       "categoria": "promos",
