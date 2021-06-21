@@ -20,7 +20,7 @@ export default
     },
     {
       "categoria": "promos",
-      "titulo": "Pilha Alcalina AA, Duracell C/16 - de R$ 59,90 por R$ 47,90 (até 20 horas do dia 21 de junho de 2021",
+      "titulo": "Pilha Alcalina AA, Duracell C/16 - de R$ 59,90 por R$ 47,90 até 20 horas do dia 21 de junho de 2021",
       "descricao": "",
       "url": "https://amzn.to/35Db3aE"
     },
