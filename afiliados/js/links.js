@@ -2,33 +2,21 @@ export default
   [
     {
       "categoria": "promos",
-      "titulo": "Ofertas Relâmpago Prime Day",
+      "titulo": "30 dias GRÁTIS do Amazon Music Unlimited",
       "descricao": "",
-      "url": "https://amzn.to/2UrgVSd"
+      "url": "https://amzn.to/2TdkWcy"
     },
     {
       "categoria": "promos",
-      "titulo": "20% off em acessórios de PC",
+      "titulo": "Ofertas em Air Fry Multilaser",
       "descricao": "",
-      "url": "https://www.amazon.com.br/gp/promotion/A16SNRRY1KW3L9?_encoding=UTF8&linkCode=ib1&tag=eddiethedrumm-20&linkId=001a3ece466505e66674e79aeafaf144&ref_=ihub_curatedcontent_e051a569-f669-494c-8367-e9d1d74b4d7c"
+      "url": "https://amzn.to/3qu1BQq"
     },
     {
       "categoria": "promos",
-      "titulo": "20% off em cabos eletrônicos",
+      "titulo": "Cupons de desconto em Livros",
       "descricao": "",
-      "url": "https://www.amazon.com.br/gp/promotion/ABYF0KZLZ3GQT?_encoding=UTF8&linkCode=ib1&tag=eddiethedrumm-20&linkId=048eb736d75b8f986b11b15bc43c2fb9&ref_=ihub_curatedcontent_6f2a5ee7-5ebb-4675-97eb-03ea1315a934"
-    },
-    {
-      "categoria": "promos",
-      "titulo": "Pilha Alcalina AA, Duracell C/16 - de R$ 59,90 por R$ 47,90 até 20 horas do dia 21 de junho de 2021",
-      "descricao": "",
-      "url": "https://amzn.to/35Db3aE"
-    },
-    {
-      "categoria": "promos",
-      "titulo": "20% off em Papelaria",
-      "descricao": "",
-      "url": "https://www.amazon.com.br/gp/promotion/A1TODQO0IBY7B7?_encoding=UTF8&linkCode=ib1&tag=eddiethedrumm-20&linkId=ed032a76c21b186f6137ca60d6de7855&ref_=ihub_curatedcontent_3765d75c-50a2-4e46-9fcf-927d319a32ee"
+      "url": "https://amzn.to/3qxUwyA"
     },
     {
       "categoria": "livros",
