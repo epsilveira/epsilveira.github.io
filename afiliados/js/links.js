@@ -67,12 +67,6 @@ export default
       "url": "https://amzn.to/3pX0NDl"
     },
     {
-      "categoria": "eletronicos",
-      "titulo": "Smart TV LED 24 Monitor LG 24TL520S, Wi-Fi, WebOS 3.5, DTV Machine Ready",
-      "descricao": "",
-      "url": "https://amzn.to/3gyZ1nH"
-    },
-    {
       "categoria": "outros",
       "titulo": "Jogo Uno - Copag",
       "descricao": "",
